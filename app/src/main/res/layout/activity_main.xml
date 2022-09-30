@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4C1414"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/arriba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/arriba2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.47" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.59" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.71" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.83" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/abajo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <TextView
+        android:id="@+id/operacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/arriba2"
+        app:layout_constraintEnd_toStartOf="@+id/der"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="@+id/izq"
+        app:layout_constraintTop_toTopOf="@+id/arriba"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/resultAnterior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/h1"
+        app:layout_constraintEnd_toStartOf="@+id/der"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="@+id/izq"
+        app:layout_constraintTop_toTopOf="@+id/arriba2"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/der"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/izq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.275" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.725" />
+
+    <Button
+        android:id="@+id/borratodo"
+        android:layout_width="64dp"
+        android:layout_height="46dp"
+        android:text="AC"
+        app:layout_constraintBottom_toTopOf="@+id/h2"
+        app:layout_constraintEnd_toStartOf="@+id/v1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/izq"
+        app:layout_constraintTop_toTopOf="@+id/h1"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+    <Button
+        android:id="@+id/abre"
+        android:layout_width="64dp"
+        android:layout_height="46dp"
+        android:text="("
+        app:layout_constraintBottom_toTopOf="@+id/h2"
+        app:layout_constraintEnd_toStartOf="@+id/v2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/v1"
+        app:layout_constraintTop_toTopOf="@+id/h1"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/cierra"
+        android:layout_width="64dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="4dp"
+        android:text=")"
+        app:layout_constraintBottom_toTopOf="@+id/h2"
+        app:layout_constraintEnd_toStartOf="@+id/v3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/v2"
+        app:layout_constraintTop_toTopOf="@+id/h1"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/entre"
+        android:layout_width="64dp"
+        android:layout_height="46dp"
+        android:text="/"
+        app:layout_constraintBottom_toTopOf="@+id/h2"
+        app:layout_constraintEnd_toStartOf="@+id/der"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/v3"
+        app:layout_constraintTop_toTopOf="@+id/h1"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/siete"
+        android:layout_width="64dp"
+        android:layout_height="46dp"
+        android:text="7"
+        app:layout_constraintBottom_toTopOf="@+id/h3"
+        app:layout_constraintEnd_toStartOf="@+id/v1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/izq"
+        app:layout_constraintTop_toTopOf="@+id/h2"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+    <Button
+        android:id="@+id/ocho"
+        android:layout_width="64dp"
+        android:layout_height="46dp"
+        android:text="8"
+        app:layout_constraintBottom_toTopOf="@+id/h3"
+        app:layout_constraintEnd_toStartOf="@+id/v2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/v1"
+        app:layout_constraintTop_toTopOf="@+id/h2"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/nueve"
+        android:layout_width="64dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="4dp"
+        android:text="9"
+        app:layout_constraintBottom_toTopOf="@+id/h3"
+        app:layout_constraintEnd_toStartOf="@+id/v3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/v2"
+        app:layout_constraintTop_toTopOf="@+id/h2"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/por"
+        android:layout_width="64dp"
+        android:layout_height="46dp"
+        android:text="*"
+        app:layout_constraintBottom_toTopOf="@+id/h3"
+        app:layout_constraintEnd_toStartOf="@+id/der"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/v3"
+        app:layout_constraintTop_toTopOf="@+id/h2"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/cuatro"
+        android:layout_width="64dp"
+        android:layout_height="46dp"
+        android:text="4"
+        app:layout_constraintBottom_toTopOf="@+id/h4"
+        app:layout_constraintEnd_toStartOf="@+id/v1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/izq"
+        app:layout_constraintTop_toTopOf="@+id/h3"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+    <Button
+        android:id="@+id/cinco"
+        android:layout_width="64dp"
+        android:layout_height="46dp"
+        android:text="5"
+        app:layout_constraintBottom_toTopOf="@+id/h4"
+        app:layout_constraintEnd_toStartOf="@+id/v2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/v1"
+        app:layout_constraintTop_toTopOf="@+id/h3"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/seis"
+        android:layout_width="64dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="4dp"
+        android:text="6"
+        app:layout_constraintBottom_toTopOf="@+id/h4"
+        app:layout_constraintEnd_toStartOf="@+id/v3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/v2"
+        app:layout_constraintTop_toTopOf="@+id/h3"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/menos"
+        android:layout_width="64dp"
+        android:layout_height="46dp"
+        android:text="-"
+        app:layout_constraintBottom_toTopOf="@+id/h4"
+        app:layout_constraintEnd_toStartOf="@+id/der"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/v3"
+        app:layout_constraintTop_toTopOf="@+id/h3"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/uno"
+        android:layout_width="64dp"
+        android:layout_height="46dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@+id/h5"
+        app:layout_constraintEnd_toStartOf="@+id/v1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/izq"
+        app:layout_constraintTop_toTopOf="@+id/h4"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+    <Button
+        android:id="@+id/dos"
+        android:layout_width="64dp"
+        android:layout_height="46dp"
+        android:text="2"
+        app:layout_constraintBottom_toTopOf="@+id/h5"
+        app:layout_constraintEnd_toStartOf="@+id/v2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/v1"
+        app:layout_constraintTop_toTopOf="@+id/h4"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/tres"
+        android:layout_width="64dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="4dp"
+        android:text="3"
+        app:layout_constraintBottom_toTopOf="@+id/h5"
+        app:layout_constraintEnd_toStartOf="@+id/v3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/v2"
+        app:layout_constraintTop_toTopOf="@+id/h4"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/mas"
+        android:layout_width="64dp"
+        android:layout_height="46dp"
+        android:text="+"
+        app:layout_constraintBottom_toTopOf="@+id/h5"
+        app:layout_constraintEnd_toStartOf="@+id/der"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/v3"
+        app:layout_constraintTop_toTopOf="@+id/h4"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/cero"
+        android:layout_width="64dp"
+        android:layout_height="46dp"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/abajo"
+        app:layout_constraintEnd_toStartOf="@+id/v1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/izq"
+        app:layout_constraintTop_toTopOf="@+id/h5"
+        app:layout_constraintVertical_bias="0.5" />
+
+
+    <Button
+        android:id="@+id/punto"
+        android:layout_width="64dp"
+        android:layout_height="46dp"
+        android:text="."
+        app:layout_constraintBottom_toTopOf="@+id/abajo"
+        app:layout_constraintEnd_toStartOf="@+id/v2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/v1"
+        app:layout_constraintTop_toTopOf="@+id/h5"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/borra"
+        android:layout_width="64dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="4dp"
+        android:text="<="
+        app:layout_constraintBottom_toTopOf="@+id/abajo"
+        app:layout_constraintEnd_toStartOf="@+id/v3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/v2"
+        app:layout_constraintTop_toTopOf="@+id/h5"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/igual"
+        android:layout_width="64dp"
+        android:layout_height="46dp"
+        android:text="="
+        app:layout_constraintBottom_toTopOf="@+id/abajo"
+        app:layout_constraintEnd_toStartOf="@+id/der"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/v3"
+        app:layout_constraintTop_toTopOf="@+id/h5"
+        app:layout_constraintVertical_bias="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
