@@ -66,27 +66,48 @@
 
     <TextView
         android:id="@+id/operacion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/arriba2"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:background="@color/purple_200"
+        android:text="0"
+        android:textAlignment="textEnd"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/operador"
         app:layout_constraintEnd_toStartOf="@+id/der"
         app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toStartOf="@+id/izq"
-        app:layout_constraintTop_toTopOf="@+id/arriba"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintTop_toTopOf="@+id/arriba2"
+        app:layout_constraintVertical_bias="1" />
 
     <TextView
-        android:id="@+id/resultAnterior"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
+        android:id="@+id/operador"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:textAlignment="textEnd"
+        android:textSize="25dp"
+        android:text="0"
+        android:background="@color/purple_200"
         app:layout_constraintBottom_toTopOf="@+id/h1"
         app:layout_constraintEnd_toStartOf="@+id/der"
         app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toStartOf="@+id/izq"
         app:layout_constraintTop_toTopOf="@+id/arriba2"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.8" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:background="@color/purple_200"
+        android:text="0"
+        android:textAlignment="textEnd"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/arriba2"
+        app:layout_constraintEnd_toStartOf="@+id/der"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="@+id/izq"
+        app:layout_constraintTop_toTopOf="@+id/arriba"
+        app:layout_constraintVertical_bias="0.8" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/der"
@@ -134,7 +155,6 @@
         app:layout_constraintStart_toStartOf="@+id/izq"
         app:layout_constraintTop_toTopOf="@+id/h1"
         app:layout_constraintVertical_bias="0.5" />
-
 
     <Button
         android:id="@+id/abre"
@@ -353,7 +373,7 @@
         android:layout_width="64dp"
         android:layout_height="46dp"
         android:layout_marginStart="4dp"
-        android:text="<="
+        android:text="Borrar"
         app:layout_constraintBottom_toTopOf="@+id/abajo"
         app:layout_constraintEnd_toStartOf="@+id/v3"
         app:layout_constraintHorizontal_bias="0.5"
